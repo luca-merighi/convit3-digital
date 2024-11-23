@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply mx-auto px-4 max-w-7xl
+    }
+
+    .button {
+        @apply
+            flex gap-2 items-center justify-center
+            px-9 h-9 text-sm text-white font-semibold
+            rounded-md transition-colors
+    }
+
+    .button-blue {
+        @apply bg-blue-500 hover:bg-blue-600
+    }
+
+    .button-green {
+        @apply bg-red-500 hover:bg-red-600
+    }
+
+    .button-red {
+        @apply bg-green-500 hover:bg-green-600
+    }
+}
